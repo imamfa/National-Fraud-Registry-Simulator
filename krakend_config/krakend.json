@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "name": "NFR-API-Gateway",
+  "port": 8080,
+  "endpoints": [
+    {
+      "endpoint": "/v1/sync",
+      "method": "POST",
+      "output_encoding": "json",
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "jwk_url": "http://psp-jwks-server:80/jwks.json",
+          "disable_jwk_security": true
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/internal/process",
+          "encoding": "json",
+          "sd": "static",
+          "method": "POST",
+          "host": [
+            "http://host.docker.internal:5000"
+          ]
+        }
+      ]
+    }
+  ]
+}

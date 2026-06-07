@@ -1,0 +1,11 @@
+Key-Type: RSA
+Key-Length: 4096
+Key-Usage: sign
+Subkey-Type: RSA
+Subkey-Length: 4096
+Subkey-Usage: encrypt
+Name-Real: PSP B2B
+Name-Email: psp@local.id
+Expire-Date: 1y
+Passphrase: password_psp_123
+%commit

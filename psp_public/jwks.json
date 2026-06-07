@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "alg": "RS256",
+      "e": "AQAB",
+      "kid": "psp-jws-prod",
+      "kty": "RSA",
+      "n": "6MD9tPhvvlLsi9Jg32feqsJQOz42nPQHO2Ikvy1upvlSefBffFkZC2krjVRtIJJt6pe8YsgXVYrKbSvcKMapLlKW3CQD3WpXeMDhww4H3G2yUwBd4QiiMmA7zGFlfP6FTFraq6WdQ8bD1jXvcZkpyLin_DiXckznCYJT8hlaBORDxamvYXjjx5X_fQ07g4KErqj7OYO8RWa9diP4cD2mcyGZ4yN0w9Nd_gfooNiN3TrLkTPwGTXSgY7s7vRv9vHhNkSmRWDjc2xEqx5JsGp-KCzc31CGkkJs6Mxsl7YW4dnVzQM3CBf6kZWmme0uf3WgsSTPi7hG6xZK55upEgs4HQ",
+      "use": "sig"
+    }
+  ]
+}

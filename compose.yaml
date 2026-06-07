@@ -1,0 +1,45 @@
+services:
+  vault:
+    image: hashicorp/vault:1.15
+    container_name: vault
+    ports:
+      - "8200:8200"
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: root_token
+      VAULT_DEV_LISTEN_ADDRESS: 0.0.0.0:8200
+    cap_add:
+      - IPC_LOCK
+    restart: unless-stopped
+
+  sftp-gateway:
+    image: atmoz/sftp:alpine
+    container_name: sftp
+    ports:
+      - "2222:22"
+    command: "psp_user:password_psp_123:1000:1000"
+    volumes:
+      - ./sftp_data/psp_user/upload:/home/psp_user/upload
+    restart: unless-stopped
+
+  psp-jwks-server:
+    image: nginx:alpine
+    container_name: psp-jwks
+    volumes:
+      - ./psp_public:/usr/share/nginx/html:ro
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
+  krakend-gateway:
+    image: devopsfaith/krakend:2.5.0
+    container_name: krakend
+    volumes:
+      - ./krakend_config:/etc/krakend
+    ports:
+      - "8080:8080"
+    command: ["run", "-d", "-c", "/etc/krakend/krakend.json"]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - psp-jwks-server
+    restart: unless-stopped

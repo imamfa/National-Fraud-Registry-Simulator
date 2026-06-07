@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "alg": "RSA-OAEP-256",
+      "e": "AQAB",
+      "kid": "bi-jwe-prod",
+      "kty": "RSA",
+      "n": "rSLdcplXk8OjbDtjAdKt3vgmZthy3lQ2gDiMhLar1CKYy7U3l0cmEu6bxX7fd26rjU_AyKvNiQnWuYhKfYRDaj4hrIzydLiQn3zcBTMzFZ9QtB5J5fXqLycErNdt161yzF9KVcV4pPCk6VjqzfsOMlt8dRLLo-QWiI-Aq4ZKPwHdu-N6VnX3A6_ImXBzK4CESwnwZ0ZmJjCFUVdXdpT1JEVCttCe4yDXfF84N0MUotujezUEes4OA_CaGtZCyUNEOKgsQEN2tP0rMWGH37Xk7Nz0Db-jJG6sQ75xvZVtHWd1GzsDvLBDsNxwni0yY8BN0OK63P_6hJAhEBQkYOp-Aw",
+      "use": "enc"
+    }
+  ]
+}
