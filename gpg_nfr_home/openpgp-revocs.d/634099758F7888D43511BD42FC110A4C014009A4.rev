@@ -1,0 +1,37 @@
+This is a revocation certificate for the OpenPGP key:
+
+pub   rsa4096 2026-06-08 [S] [expires: 2027-06-08]
+      634099758F7888D43511BD42FC110A4C014009A4
+uid          NFR Regulator <nfr@local.id>
+
+A revocation certificate is a kind of "kill switch" to publicly
+declare that a key shall not anymore be used.  It is not possible
+to retract such a revocation certificate once it has been published.
+
+Use it to revoke this key in case of a compromise or loss of
+the secret key.  However, if the secret key is still accessible,
+it is better to generate a new revocation certificate and give
+a reason for the revocation.  For details see the description of
+of the gpg command "--generate-revocation" in the GnuPG manual.
+
+To avoid an accidental use of this file, a colon has been inserted
+before the 5 dashes below.  Remove this colon with a text editor
+before importing and publishing this revocation certificate.
+
+:-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: This is a revocation certificate
+
+iQI2BCABCgAgFiEEY0CZdY94iNQ1Eb1C/BEKTAFACaQFAmombG4CHQAACgkQ/BEK
+TAFACaTuag/+O0rxlVY1AH3Q78PFvoTWnmuSQzQxzneClsSF47BMqSiMPoL24xka
+zHXXcIcP2+JCrIdxZeng8ktxyjsqfXfJoL8YNBDzhYP1Snlp3OqkFhoRMDtzEsXi
+1YYlmX6wQBqYstpFhXQu2dE+22/eRsw5aZU93ZqN+hdNr8jzO3KPg3h+lLQfVnHk
+FXYgUyMQyyipDuBhoDtokAgH1vddjOLQeDPj5pbBql8Pd3kFtfTMl49+3NX7Bfqw
+QNsCEzAEBzs08rMc2tEIx9Y7fL3vg7JWg1oMT3tx1YRzQ74ycUvY7XwdEg4lMsFl
+cizxkghgk7julSvC1V37VXO2p9uSm/HQGP33INlhiZmaAIZEfxi7OnfN28i4p47a
+eh1FzB0H2YDGEJ/yYQhAKQ3qhSM2gLtq5EnP5dJQAaTyL98KnSVOqfN3DQoesF9E
+KJ2+0E6cvOgmXBLK7jB66X6byyktbzbKhOR2PxF9cIDs1g4q66refyYKY+ipC6kB
+7hXdqq83ppEBYeCzKqkyHxnsJ/AI0OoORi3IB74nHZxr9IsPUfwVqdquCfJqZd+b
+f1MlSTskAzKr6mlQtJ3s6mFXYRfZH1T+zMEHEoEz1xMY9zHavBOUiRuku7oEgNR8
+9ZRM+rq4ARQnMU5ALo8wsxINICB5eat/dB1E46FWuUPTcyaQ6DrrAdU=
+=8+n3
+-----END PGP PUBLIC KEY BLOCK-----

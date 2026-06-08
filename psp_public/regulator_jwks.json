@@ -3,9 +3,9 @@
     {
       "alg": "RSA-OAEP-256",
       "e": "AQAB",
-      "kid": "bi-jwe-prod",
+      "kid": "regulator-jwe-prod",
       "kty": "RSA",
-      "n": "rSLdcplXk8OjbDtjAdKt3vgmZthy3lQ2gDiMhLar1CKYy7U3l0cmEu6bxX7fd26rjU_AyKvNiQnWuYhKfYRDaj4hrIzydLiQn3zcBTMzFZ9QtB5J5fXqLycErNdt161yzF9KVcV4pPCk6VjqzfsOMlt8dRLLo-QWiI-Aq4ZKPwHdu-N6VnX3A6_ImXBzK4CESwnwZ0ZmJjCFUVdXdpT1JEVCttCe4yDXfF84N0MUotujezUEes4OA_CaGtZCyUNEOKgsQEN2tP0rMWGH37Xk7Nz0Db-jJG6sQ75xvZVtHWd1GzsDvLBDsNxwni0yY8BN0OK63P_6hJAhEBQkYOp-Aw",
+      "n": "zlGwFtvCI9wyY6FRiWdX6_9s2Jymu4mAd7uB2Qu0YojU8d__ju2ZA7ZkYy7swjXdLuiZOK2cdJ3gm_joeL-D7n0X_zIvro5CwCAb1EVE6Xoz789MLTpucJV34t1_dN8-VKWFKmQFm08JTtD_d_zFBAsb2ADyC9mx-KHGVjZxpmHuxt7VZMyaDlXuWj4RwNJK5rdjqnSxPZcVEXZal_PkDNGfLQaC3KDI6PFJ3ZDyOqCchuevuC6PKRkBUet0yKqC313iVfgqNKw-GqM1D2TtSnWtdeuc9I5lDF7Ei-zeXMZnuiG__9u8MaGLGM0LA3JEVq5wz4wWkVM7SXe0o60QAw",
       "use": "enc"
     }
   ]

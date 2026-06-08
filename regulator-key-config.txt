@@ -4,7 +4,7 @@ Key-Usage: sign
 Subkey-Type: RSA
 Subkey-Length: 4096
 Subkey-Usage: encrypt
-Name-Real: NFR Server
+Name-Real: NFR Regulator
 Name-Email: nfr@local.id
 Expire-Date: 1y
 Passphrase: password_regulator_123
