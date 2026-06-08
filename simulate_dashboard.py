@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import requests
 import json
 import time
@@ -245,7 +246,7 @@ if not (btn_legit or btn_attack):
             <div class="access-panel">
                 <div class="access-title">Detail Akses</div>
                 <div class="copy-list">
-                    <div class="copy-item"><div class="copy-label">Dashboard URL</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8501</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Dashboard URL</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8501</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
                 </div>
             </div>
         </div>
@@ -262,9 +263,9 @@ if not (btn_legit or btn_attack):
             <div class="access-panel">
                 <div class="access-title">Detail Akses</div>
                 <div class="copy-list">
-                    <div class="copy-item"><div class="copy-label">Endpoint</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8080/v1/sync</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
-                    <div class="copy-item"><div class="copy-label">Method</div><div class="copy-row"><div class="copy-value">POST</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
-                    <div class="copy-item"><div class="copy-label">Requirement</div><div class="copy-row"><div class="copy-value">Header JWS + Body JSON JWE</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Endpoint</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8080/v1/sync</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Method</div><div class="copy-row"><div class="copy-value">POST</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Requirement</div><div class="copy-row"><div class="copy-value">Header JWS + Body JSON JWE</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
                 </div>
             </div>
         </div>
@@ -292,8 +293,8 @@ if not (btn_legit or btn_attack):
             <div class="access-panel">
                 <div class="access-title">Detail Akses</div>
                 <div class="copy-list">
-                    <div class="copy-item"><div class="copy-label">Vault URL</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8200</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
-                    <div class="copy-item"><div class="copy-label">Token</div><div class="copy-row"><div class="copy-value">root_token</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Vault URL</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8200</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Token</div><div class="copy-row"><div class="copy-value">root_token</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
                 </div>
             </div>
         </div>
@@ -310,7 +311,25 @@ if not (btn_legit or btn_attack):
             <div class="access-panel">
                 <div class="access-title">Detail Akses</div>
                 <div class="copy-list">
-                    <div class="copy-item"><div class="copy-label">JWKS URL</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8081/jwks.json</div><button class="copy-btn" type="button" onclick="navigator.clipboard.writeText(this.parentElement.querySelector('.copy-value').innerText); this.innerText='Copied'; setTimeout(() => this.innerText='Copy', 900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">JWKS URL</div><div class="copy-row"><div class="copy-value">http://{PUBLIC_IP}:8081/jwks.json</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stack-card has-access">
+            <div class="stack-front">
+                <div class="stack-icon">📁</div>
+                <div class="stack-main">
+                    <div class="stack-title-row"><div class="stack-title">SFTP Dropzone & Watchdog</div><div class="stack-type">Batch Processing</div></div>
+                    <div class="stack-desc">Menerima file terenkripsi GPG secara batch dan memprosesnya secara real-time menggunakan Python PollingObserver.</div>
+                    <div class="access-hint">Hover untuk detail akses</div>
+                </div>
+            </div>
+            <div class="access-panel">
+                <div class="access-title">Detail Akses</div>
+                <div class="copy-list">
+                    <div class="copy-item"><div class="copy-label">SFTP URL</div><div class="copy-row"><div class="copy-value">sftp://{PUBLIC_IP}:2222</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
+                    <div class="copy-item"><div class="copy-label">Kredensial</div><div class="copy-row"><div class="copy-value">psp_user : password_psp_123</div><button class="copy-btn" type="button" onclick="var t=this.parentElement.querySelector('.copy-value').innerText;if(navigator.clipboard){{navigator.clipboard.writeText(t);}}else{{var e=document.createElement('textarea');e.value=t;document.body.appendChild(e);e.select();document.execCommand('copy');document.body.removeChild(e);}}this.innerText='Copied';setTimeout(()=>this.innerText='Copy',900);">Copy</button></div></div>
                 </div>
             </div>
         </div>
@@ -376,3 +395,32 @@ if btn_legit or btn_attack:
                     st.error("Request ditolak oleh API Gateway. Backend tidak perlu memproses traffic tidak sah.")
             except requests.exceptions.ConnectionError:
                 st.error("Gagal terhubung ke KrakenD Gateway. Periksa status Docker Container.")
+
+# --- HACK: BYPASS STREAMLIT DOMPURIFY ONCLICK STRIPPING ---
+components.html("""
+<script>
+const parentDoc = window.parent.document;
+// Cegah script berjalan berulang kali saat Streamlit re-render
+if (!parentDoc.getElementById('nfr-copy-hack')) {
+    const marker = parentDoc.createElement('div');
+    marker.id = 'nfr-copy-hack';
+    marker.style.display = 'none';
+    parentDoc.body.appendChild(marker);
+
+    parentDoc.addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('copy-btn')) {
+            const val = e.target.parentElement.querySelector('.copy-value').innerText;
+            const el = parentDoc.createElement('textarea');
+            el.value = val;
+            parentDoc.body.appendChild(el);
+            el.select();
+            parentDoc.execCommand('copy');
+            parentDoc.body.removeChild(el);
+            
+            e.target.innerText = 'Copied!';
+            setTimeout(() => e.target.innerText = 'Copy', 1200);
+        }
+    });
+}
+</script>
+""", height=0, width=0)
